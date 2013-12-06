@@ -14,6 +14,11 @@ class Train
     distance / @speed
   end
 
+  #Calculate trip distance based on duration.
+  def trip_distance(duration)
+    duration * @speed
+  end
+
   # Returns the String type of power for this train.
   def power_source
     if @model.include?('-A')
